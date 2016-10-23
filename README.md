@@ -83,7 +83,7 @@ module.exports = function(config) {
 }
 ```
 
-#### default `thresholds`
+#### Default `thresholds`
 ```js
 {
   lines: 90,
