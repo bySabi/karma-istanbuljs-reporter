@@ -1,0 +1,10 @@
+CONTRIBUTING.md
+test
+.eslintrc.js
+.eslintignore
+.travis.yml
+coverage
+.babelrc
+appveyor.yml
+karma.conf.js
+tests.webpack.js

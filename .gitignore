@@ -1,0 +1,12 @@
+.DS_Store
+.idea/
+*.sublime-workspace
+
+attic
+node_modules
+lib
+coverage
+build
+
+# npm debug file
+npm-debug.log
