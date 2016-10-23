@@ -5,7 +5,7 @@
       "plugins": [
         ["istanbul", {
           "include": [
-            "src_test/**"
+            "src/**"
           ],
           "exclude": [
             "test/**"

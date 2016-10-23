@@ -1,7 +1,7 @@
 {
-  "name": "karma-istanbuljs-reporter",
+  "name": "karma-istanbuljs-reporter--example",
   "version": "0.1.0",
-  "description": "Karma reporter using Istanbul code coverage library",
+  "description": "karma-istanbuljs-reporter--example",
   "repository": {
     "type": "git",
     "url": "https://github.com/bySabi/karma-istanbuljs-reporter.git"
@@ -10,26 +10,11 @@
   "bugs": {
     "url": "https://github.com/bySabi/karma-istanbuljs-reporter/issues"
   },
-  "keywords": [
-    "karma",
-    "karma-plugin",
-    "karma-reporter",
-    "coverage",
-    "cover",
-    "istanbul",
-    "istanbuljs"
-  ],
-  "main": "index.js",
   "scripts": {
     "karma": "karma start",
     "lint": "eslint . --ext .js",
     "testonly": "cross-env BABEL_ENV=test npm run karma",
     "test": "npm run lint && npm run testonly"
-  },
-  "dependencies": {
-    "istanbul-lib-coverage": "1.x.x",
-    "istanbul-lib-report": "^1.0.0-alpha.3",
-    "istanbul-reports": "1.x.x"
   },
   "devDependencies": {
     "babel-core": "6.x.x",
@@ -43,6 +28,7 @@
     "karma-tap": "3.x.x",
     "karma-jsdom-launcher": "3.x.x",
     "karma-webpack": "1.x.x",
+    "karma-istanbuljs-reporter": "*",
     "tape": "4.x.x",
     "webpack": "^2.1.0-beta.25",
     "cross-env": "3.x.x"
