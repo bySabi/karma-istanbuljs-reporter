@@ -24,7 +24,7 @@ npm install karma-istanbuljs-reporter --save-dev
 
 Add `karma.conf.js` file to project.
 
-## Examples of `karma.conf.js
+## Examples of `karma.conf.js`
 ### Basic
 ```js
 module.exports = function(config) {
