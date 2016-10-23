@@ -1,14 +1,14 @@
-const libCoverage = require('istanbul-lib-coverage');
-const libReport = require('istanbul-lib-report');
-const reports = require('istanbul-reports');
+var libCoverage = require('istanbul-lib-coverage');
+var libReport = require('istanbul-lib-report');
+var reports = require('istanbul-reports');
 
-const IstanbulReporter = function(baseReporterDecorator, rootConfig, logger, helper) {
-  const config = rootConfig.istanbulReporter || {};
-  const reporters = config.reporters || [];
-  const reportDir = config.dir;
-  const checkCoverage = config.checkCoverage;
+var IstanbulReporter = function(baseReporterDecorator, rootConfig, logger, helper) {
+  var config = rootConfig.istanbulReporter || {};
+  var reporters = config.reporters || [];
+  var reportDir = config.dir;
+  var checkCoverage = config.checkCoverage;
   // default thresholds
-  const thresholds = checkCoverage ? {
+  var thresholds = checkCoverage ? {
     lines: checkCoverage.lines || 90,
     functions: checkCoverage.function || 0,
     statements: checkCoverage.statments || 0,
@@ -17,7 +17,7 @@ const IstanbulReporter = function(baseReporterDecorator, rootConfig, logger, hel
 
   baseReporterDecorator(this);
 
-  let map;
+  var map;
   this.onBrowserStart = function(browser) {
     map = libCoverage.createCoverageMap({});
   }
@@ -33,25 +33,25 @@ const IstanbulReporter = function(baseReporterDecorator, rootConfig, logger, hel
   }
 
   this.onRunComplete = function(browsers, results) {
-    const context = libReport.createContext({
+    var context = libReport.createContext({
       dir: reportDir
     });
 
-    const tree = libReport.summarizers.pkg(map);
+    var tree = libReport.summarizers.pkg(map);
 
     // reporters
     reporters.forEach(function(reporter) {
-      const name = reporter.type;
-      const report = reports.create(name, reporter);
+      var name = reporter.type;
+      var report = reports.create(name, reporter);
       tree.visit(report, context);
     });
 
     // checkCoverage
     if (checkCoverage) {
-      const summary = map.getCoverageSummary();
+      var summary = map.getCoverageSummary();
       // ERROR: Coverage for lines (90.12%) does not meet global threshold (120%)
       Object.keys(thresholds).forEach(function (key) {
-        const coverage = summary[key].pct;
+        var coverage = summary[key].pct;
         if (coverage < thresholds[key]) {
           results.exitCode = 1;
           console.error('ERROR: Coverage for ' + key + ' (' + coverage + '%) does not meet global threshold (' + thresholds[key] + '%)');
