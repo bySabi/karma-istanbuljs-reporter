@@ -111,6 +111,7 @@ module.exports = function(config) {
 ```
 
 ## WIP: 'Include all sources' feature
+[issues#1](https://github.com/bySabi/karma-istanbuljs-reporter/issues/1)
 
 ## Example
 - [karma-istanbuljs-reporter--example](https://github.com/bySabi/karma-istanbuljs-reporter/tree/example)
