@@ -1,3 +1,3 @@
 module.exports = {
-  'extends': ['standard-deviation']
+  'extends': ['standard-deviation--es5']
 };
