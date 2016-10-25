@@ -5,7 +5,7 @@
 [![Build Status](https://travis-ci.org/bySabi/karma-istanbuljs-reporter.svg?branch=master)](https://travis-ci.org/bySabi/karma-istanbuljs-reporter)
 [![Windows Tests](https://img.shields.io/appveyor/ci/bySabi/karma-istanbuljs-reporter/master.svg?label=Windows%20Tests)](https://ci.appveyor.com/project/bySabi/karma-istanbuljs-reporter)
 [![bitHound Overall Score](https://www.bithound.io/github/bySabi/karma-istanbuljs-reporter/badges/score.svg)](https://www.bithound.io/github/bySabi/karma-istanbuljs-reporter)
-[![Donate](https://img.shields.io/badge/$-support-green.svg?style=flat-square)](paypal.me/bySabi/10)
+[![Donate](https://img.shields.io/badge/$-support-green.svg?style=flat-square)](https://paypal.me/bySabi/10)
 
 > a Karma plugin for generate code coverage using new, v1, [Istanbul](https://istanbul.js.org/) API
 
