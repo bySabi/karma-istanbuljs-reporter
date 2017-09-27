@@ -10,8 +10,8 @@ var IstanbulReporter = function(baseReporterDecorator, rootConfig, logger, helpe
   // default thresholds
   var thresholds = checkCoverage ? {
     lines: checkCoverage.lines || 90,
-    functions: checkCoverage.function || 0,
-    statements: checkCoverage.statments || 0,
+    functions: checkCoverage.functions || 0,
+    statements: checkCoverage.statements || 0,
     branches: checkCoverage.branches || 0
   } : undefined;
 
