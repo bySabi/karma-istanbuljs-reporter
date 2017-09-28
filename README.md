@@ -117,6 +117,15 @@ module.exports = function(config) {
 ## Example
 - [karma-istanbuljs-reporter--example](https://github.com/bySabi/karma-istanbuljs-reporter/tree/example)
 
+## Credits
+
+### author
+* bySabi Files <> [@bySabi](https://github.com/bySabi)
+
+### contributors
+* Josh Baldwin <> [@joshbaldwin](https://github.com/joshbaldwin)
+
+
 ## Contributing
 * Documentation improvement
 * Feel free to send any PR
