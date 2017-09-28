@@ -1,6 +1,6 @@
 {
   "name": "karma-istanbuljs-reporter",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Karma reporter using Istanbul code coverage library",
   "repository": {
     "type": "git",
